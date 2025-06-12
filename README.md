@@ -40,9 +40,7 @@ Add Pulse to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  pulse:
-    git:
-      url: https://github.com/yourusername/pulse.git
+  pulse: ^<latest-version>
 ```
 
 Import Pulse in your Dart code:
@@ -61,8 +59,8 @@ import 'package:pulse/pulse.dart';
 class CounterPulse extends PulseBase<int> {
   CounterPulse() : super(0);
 
-  void increment() => pump(state + 1);
-  void decrement() => pump(state - 1);
+  void increment() => push(state + 1);
+  void decrement() => push(state - 1);
 }
 ```
 
@@ -123,8 +121,8 @@ PulseListener<int>(
 class CounterPulse extends PulseBase<int> {
   CounterPulse() : super(0);
 
-  void increment() => pump(state + 1);
-  void decrement() => pump(state - 1);
+  void increment() => push(state + 1);
+  void decrement() => push(state - 1);
 }
 
 void main() {

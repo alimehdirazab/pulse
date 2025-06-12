@@ -16,17 +16,17 @@ abstract class PulseBase<T> {
 
   Stream<T> get stream => _controller.stream;
 
-  // Pump a new state to listeners
-  void pump(T state) {
+  // Push a new state to listeners
+  void push(T state) {
     if (_state == state) return;
     _state = state;
     _controller.add(_state);
-    onPump(_state);
+    onPush(_state);
   }
 
-  // Called after every pump, can be overridden for side effects/logging
+  // Called after every push, can be overridden for side effects/logging
   @protected
-  void onPump(T state) {}
+  void onPush(T state) {}
 
   // Listen to state changes
   StreamSubscription<T> listen(PulseListener<T> listener) {
@@ -35,12 +35,12 @@ abstract class PulseBase<T> {
 
   // Synchronously update state (for advanced use)
   void setState(T Function(T current) updater) {
-    pump(updater(_state));
+    push(updater(_state));
   }
 
   // Reset state to initial (if supported)
   void reset() {
-    pump(_initialState);
+    push(_initialState);
   }
 
   // Close the stream controller
