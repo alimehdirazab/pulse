@@ -127,7 +127,7 @@ class PulseBlocBuilder<T> extends StatelessWidget {
   final Widget Function(BuildContext context, T state, T? previousState)
       builder;
 
-  const PulseBlocBuilder({Key? key, required this.builder}) : super(key: key);
+  const PulseBlocBuilder({super.key, required this.builder});
 
   @override
   Widget build(BuildContext context) {
@@ -147,10 +147,10 @@ class _PulseBlocStreamBuilder<T> extends StatefulWidget {
   final Widget Function(BuildContext, T, T?) builder;
 
   const _PulseBlocStreamBuilder({
-    Key? key,
+    super.key,
     required this.pulse,
     required this.builder,
-  }) : super(key: key);
+  });
 
   @override
   State<_PulseBlocStreamBuilder<T>> createState() =>
@@ -193,10 +193,10 @@ class PulseDebounceBuilder<T> extends StatefulWidget {
   final Widget Function(BuildContext context, T state) builder;
 
   const PulseDebounceBuilder({
-    Key? key,
+    super.key,
     required this.debounce,
     required this.builder,
-  }) : super(key: key);
+  });
 
   @override
   State<PulseDebounceBuilder<T>> createState() =>
@@ -245,7 +245,7 @@ class PulseWatch<T> extends StatefulWidget {
   final Widget Function(BuildContext context, ValueNotifier<T> notifier)
       builder;
 
-  const PulseWatch({Key? key, required this.builder}) : super(key: key);
+  const PulseWatch({super.key, required this.builder});
 
   @override
   State<PulseWatch<T>> createState() => _PulseWatchState<T>();

@@ -50,17 +50,17 @@ class MultiPulseListener extends StatefulWidget {
   final Widget child;
 
   const MultiPulseListener({
-    Key? key,
+    super.key,
     required this.pulseTypes,
     required this.listener,
     required this.child,
-  }) : super(key: key);
+  });
 
   @override
-  _MultiPulseListenerState createState() => _MultiPulseListenerState();
+  MultiPulseListenerState createState() => MultiPulseListenerState();
 }
 
-class _MultiPulseListenerState extends State<MultiPulseListener> {
+class MultiPulseListenerState extends State<MultiPulseListener> {
   late List<PulseBase> _pulses;
   late List<dynamic> _states;
   List<StreamSubscription>? _subscriptions;
@@ -75,7 +75,9 @@ class _MultiPulseListenerState extends State<MultiPulseListener> {
     _subscriptions = List.generate(_pulses.length, (i) {
       return _pulses[i].stream.listen((value) {
         _states[i] = value;
-        widget.listener(context, List<dynamic>.from(_states));
+        if (mounted) {
+          widget.listener(context, List<dynamic>.from(_states));
+        }
       });
     });
   }

@@ -40,7 +40,7 @@ Add Pulse to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  pulse: ^<latest-version>
+  pulse: ^0.0.1
 ```
 
 Import Pulse in your Dart code:
