@@ -11,9 +11,9 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/to/develop-packages).
 -->
 
-# Pulse
+# PulseCore
 
-Pulse is a powerful, flexible, and modern state management solution for Flutter. Inspired by Cubit and other state management patterns, Pulse provides a robust API for managing, reacting to, and providing state throughout your Flutter app. Pulse is designed for simplicity, performance, and scalability, and introduces unique features for advanced use cases.
+PulseCore is a powerful, flexible, and modern state management solution for Flutter. Inspired by Cubit and other state management patterns, PulseCore provides a robust API for managing, reacting to, and providing state throughout your Flutter app. PulseCore is designed for simplicity, performance, and scalability, and introduces unique features for advanced use cases.
 
 ---
 
@@ -36,17 +36,17 @@ Pulse is a powerful, flexible, and modern state management solution for Flutter.
 
 ## Getting started
 
-Add Pulse to your `pubspec.yaml`:
+Add PulseCore to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  pulse: ^0.0.1
+  pulse_core: ^0.0.1
 ```
 
-Import Pulse in your Dart code:
+Import PulseCore in your Dart code:
 
 ```dart
-import 'package:pulse/pulse.dart';
+import 'package:pulse_core/pulse_core.dart';
 ```
 
 ---
@@ -156,5 +156,5 @@ void main() {
 
 ---
 
-Pulse is designed to be the heartbeat of your Flutter app's state management.  
+PulseCore is designed to be the heartbeat of your Flutter app's state management.  
 Happy coding!
