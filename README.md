@@ -11,9 +11,9 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/to/develop-packages).
 -->
 
-# PulseCore
+# PulseStateX
 
-PulseCore is a powerful, flexible, and modern state management solution for Flutter. Inspired by Cubit and other state management patterns, PulseCore provides a robust API for managing, reacting to, and providing state throughout your Flutter app. PulseCore is designed for simplicity, performance, and scalability, and introduces unique features for advanced use cases.
+PulseStateX is a powerful, flexible, and modern state management solution for Flutter. Inspired by Cubit and other state management patterns, PulseStateX provides a robust API for managing, reacting to, and providing state throughout your Flutter app. PulseStateX is designed for simplicity, performance, and scalability, and introduces unique features for advanced use cases.
 
 ---
 
@@ -36,17 +36,17 @@ PulseCore is a powerful, flexible, and modern state management solution for Flut
 
 ## Getting started
 
-Add PulseCore to your `pubspec.yaml`:
+Add PulseStateX to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  pulse_core: ^0.0.1
+  pulse_statex: ^0.0.1
 ```
 
-Import PulseCore in your Dart code:
+Import PulseStateX in your Dart code:
 
 ```dart
-import 'package:pulse_core/pulse_core.dart';
+import 'package:pulse_statex/pulse_statex.dart';
 ```
 
 ---
@@ -156,5 +156,5 @@ void main() {
 
 ---
 
-PulseCore is designed to be the heartbeat of your Flutter app's state management.  
+PulseStateX is designed to be the heartbeat of your Flutter app's state management.  
 Happy coding!

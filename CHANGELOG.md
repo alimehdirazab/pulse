@@ -1,6 +1,6 @@
 ## 0.0.1
 
-- Initial release of pulse_core: a modern, flexible, and powerful state management package for Flutter.
+- Initial release of pulse_statex: a modern, flexible, and powerful state management package for Flutter.
 - Features:
   - PulseBase: core state management class.
   - PulseProvider / MultiPulseProvider: provide state to the widget tree.
