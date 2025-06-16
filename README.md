@@ -40,7 +40,7 @@ Add PulseStateX to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  pulse_statex: ^0.0.1
+  pulse_statex: ^0.0.2
 ```
 
 Import PulseStateX in your Dart code:

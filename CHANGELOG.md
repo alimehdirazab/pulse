@@ -14,3 +14,7 @@
   - PulseWatch: exposes ValueNotifier for state.
   - ScreenScopedPulseProvider: provide state only to selected screens/types.
   - Type-safe, null-safe, and extensible API.
+
+  ## 0.0.2
+
+  - Minor bug fixes.
